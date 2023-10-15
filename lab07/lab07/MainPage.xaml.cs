@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace lab07
+    //Sinche
 {
     public partial class MainPage : ContentPage
     {
