@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace lab07
-    //Sinche
+
 {
     public partial class MainPage : ContentPage
     {
@@ -17,18 +17,19 @@ namespace lab07
 
             List<Estudiante> estudiantes1 = new List<Estudiante>
             {
-                new Estudiante { Nombres = "Alejandro", Apellidos = "Gutiérrez", Edad = 20, Seccion = "Seccion A" },
-                new Estudiante { Nombres = "Lorena", Apellidos = "Sánchez", Edad = 19, Seccion = "Seccion A" },
-                new Estudiante { Nombres = "Ricardo", Apellidos = "López", Edad = 22, Seccion = "Seccion A" },
-                new Estudiante { Nombres = "Isabel", Apellidos = "Torres", Edad = 21, Seccion = "Seccion B" },
-                new Estudiante { Nombres = "Gustavo", Apellidos = "Mendoza", Edad = 18, Seccion = "Seccion B" },
-                new Estudiante { Nombres = "Paula", Apellidos = "Pérez", Edad = 23, Seccion = "Seccion B" },
-                new Estudiante { Nombres = "Roberto", Apellidos = "Fernández", Edad = 20, Seccion = "Seccion C" },
-                new Estudiante { Nombres = "Natalia", Apellidos = "Gómez", Edad = 22, Seccion = "Seccion C" },
-                new Estudiante { Nombres = "Luisa", Apellidos = "Hernández", Edad = 24, Seccion = "Seccion C" },
-            };
+                    new Estudiante { Nombres = "Isabel", Apellidos = "Torres", Edad = 21, Ciclo = "1" },
+                    new Estudiante { Nombres = "Juan", Apellidos = "López", Edad = 19, Ciclo = "2" },
+                    new Estudiante { Nombres = "María", Apellidos = "Gómez", Edad = 20, Ciclo = "1" },
+                    new Estudiante { Nombres = "Carlos", Apellidos = "Martínez", Edad = 22, Ciclo = "3" },
+                    new Estudiante { Nombres = "Laura", Apellidos = "Sánchez", Edad = 18, Ciclo = "2" },
+                    new Estudiante { Nombres = "Pedro", Apellidos = "Rodríguez", Edad = 21, Ciclo = "1" },
+                    new Estudiante { Nombres = "Sofía", Apellidos = "Pérez", Edad = 19, Ciclo = "3" },
+                    new Estudiante { Nombres = "Alejandro", Apellidos = "Hernández", Edad = 20, Ciclo = "2" },
+                    new Estudiante { Nombres = "Valeria", Apellidos = "Díaz", Edad = 18, Ciclo = "1" },
+                    new Estudiante { Nombres = "Lucas", Apellidos = "Gutiérrez", Edad = 23, Ciclo = "3" }
+        };
 
-            var groupedStudents = estudiantes1.GroupBy(e => e.Seccion);
+            var groupedStudents = estudiantes1.GroupBy(e => e.Ciclo);
 
             lvEstudiantes1.ItemsSource = groupedStudents;
         }

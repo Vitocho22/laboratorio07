@@ -9,6 +9,6 @@ namespace lab07
         public string Nombres { get; set; }
         public string Apellidos { get; set; }
         public int Edad { get; set; }
-        public string Seccion { get; set; }
+        public string Ciclo { get; set; }
     }
 }

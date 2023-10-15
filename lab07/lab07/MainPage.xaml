@@ -9,8 +9,15 @@
             <ListView.GroupHeaderTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout BackgroundColor="LawnGreen">
-                            <Label Text="{Binding Key}" TextColor="Black" FontSize="Large"  HorizontalTextAlignment="Center"  />
+                        <StackLayout BackgroundColor="CornflowerBlue">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <Label Text=" CICLO: " TextColor="Black" FontSize="Medium" VerticalOptions="CenterAndExpand" />
+                                <Label Text="{Binding Key}" TextColor="Black" FontSize="Large" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" Grid.Column="1" />
+                            </Grid>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
